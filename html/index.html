@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EM</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="libs/FontAwesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="">
+</head>
+<body>
+	<!--основная обвертка-->
+	<div class="wrapper">
+		<!--header-->
+		<div class="header">
+			<div class="logo">EM</div>
+			<div class="header-title">
+				<a href="#">Регистр пациентов</a>
+				<a href="#" class="header-title-active">Реестр нарядов</a>
+			</div>
+			<div class="header-name">
+				<div class="pic"></div>
+				<div class="header-name-title">
+					<p><span>Фамилия И.О.</span></p>
+					<p>должность сотрудника</p>
+				</div>
+				<div class="caret">
+					<a href="#"><i class="fas fa-caret-down"></i></a>
+				</div>
+			</div>
+		</div>
+		<!--верхняя панедь с флагами-->
+		<div class="top-panel">
+			<div class="top-panel-top">
+				<div class="top-panel-top-name">
+					<h1><span>Ольховников</span> Сергей Юрьевич</h1>
+					<p>Мужчина, 52 года</p>
+				</div>
+				<div class="top-panel-top-left">
+					<p>Дата рождения: <span>12.06.1961</span></p>
+					<p>Дата смерти: <span>07.01.2013</span></p>
+				</div>
+				<div class="top-panel-top-right">
+					<p>ОМС: <span>0000-0000-0000-0000</span></p>
+					<p>СМО: <span>ТФОМС г.Москвы</span></p>
+				</div>
+				<div class="window">
+					<div class="minimize">
+						<i class="far fa-window-minimize"></i>
+					</div>
+					<div class="close">
+						<i class="fas fa-times"></i>
+					</div>
+				</div>
+				<div class="flags">
+					<div class="orange"></div>
+					<div class="turquoise"></div>
+					<div class="grey"></div>
+				</div>
+			</div>
+			<div class="top-panel-bottom">
+				<div class="top-panel-bottom-left">
+					<p>Статус <span>&nbsp;Работающий</span></p>
+				</div>
+				<div class="top-panel-bottom-left">
+					<p>Адрес проживания <span>&nbsp;г.Москва, ул.Верхняя Первомайская, дом 45, корп. 3, кв. 75</span></p>
+				</div>
+				<div class="top-panel-bottom-left-end">
+					<p>ЛПУ прикрепления <span>&nbsp;ГП №58 (ГП №3 филиал №5)</span></p>
+				</div>
+				<div class="caret-b">
+					<a href="#"><i class="fas fa-caret-down"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="full-main">
+			<!--сайдбар слева-->
+			<div class="sidebar">
+				<div class="section">
+					<a href="#">Льготы</a>
+				</div>
+				<div class="section">
+					<a href="#">Документы</a>
+				</div>
+				<div class="section selected">
+					<a href="#">Заказы-наряды</a>
+				</div>
+				<div class="section">
+					<a href="#">История</a>
+				</div>
+			</div>
+			<!--главная часть с таблицами-->
+			<div class="main">
+				<!--левая таблица-->
+				<div class="column-left">
+					<div class="column-left-title row">
+						<h3>Реестр нарядов</h3>
+							<button id="btnNewOutfit" class="column-left-add">новый наряд</button>
+					</div>
+					<table class="table-left">
+						<!--1-->
+						<tr class="table-left-row active-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - <span>не закрыт</span></p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов</p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn-active">открыт</button>
+							</td>
+						</tr>
+						<!--2-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов <i class="fas fa-home"></i></p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--3-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов</p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--4-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов</p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--5-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов <i class="fas fa-home"></i></p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--6-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов <i class="fas fa-home"></i></p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--7-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов</p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--8-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов</p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--9-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов</p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+						<!--10-->
+						<tr class="table-left-row row">
+							<td class="table-left-number">
+								<p>0045A000000</p>
+								<p>25.05.16 - 15.06.16</p>
+							</td>
+							<td class="table-left-tools">
+								<p>Пластиковый съемный протез</p><br>
+								<p class="table-left-tools-time">15 часов</p>
+								<p class="table-left-tools-work">6 работ</p>
+							</td>
+							<td class="table-left-name">
+								<p>Фамилия И.О.<a href="#"><i class="fas fa-info"></i></a></p>
+								<p>ГП №58 (ГП №3 филиал №5)</p>
+							</td>
+							<td class="table-left-account">
+								<p>000</p>
+								<p>182 1 01 01011 01 3000 110</p>
+							</td>
+							<td class="table-left-status">
+								<p>12345.00</p>
+								<button class="table-left-row-btn">закрыт</button>
+							</td>
+						</tr>
+					</table>
+					<div class="left-bottom-sum">
+						<div class="left-bottom-sum-prc">
+							<div class="left-bottom-sum-prc-1">
+								<p>заказов-нарядов: <span>16</span></p>
+								<p>средняя длительность работ: <span>124д.</span></p>
+							</div>
+							<div class="left-bottom-sum-prc-2">
+								<p>КБК: <span>8</span></p>
+								<p>льгот: <span>8</span></p>
+							</div>
+							<div class="left-bottom-sum-prc-3">
+								<p>пациентов: <span>16</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;врачей: <span>5</span></p>
+								<p>видов протезирования: <span>16</span></p>
+							</div>
+							<div class="left-bottom-sum-prc-4">
+								<p>средняя стоимость: <span>19854.00</span></p>
+								<p>общая стоимость: <span>19854.00</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--правая таблица-->
+				<div class="column-right">
+					<div class="column-right-title">
+						<h3>Редактирование наряда</h3>
+					</div>
+					<div class="column-right-info">
+						<div class="column-right-info-left">
+							<p class="column-right-info-left-bold">0045A000000</p>
+							<button class="column-right-info-btn-active">открыт</button>
+							<p class="column-right-info-left-dis">льгота: <span>000</span> <a href="#"><i class="fas fa-info"></i></a></p>
+						</div>
+						<div class="column-right-info-center">
+							<p class="column-right-info-center-patient">пациент: <span>иванов иван иванович</span></p>
+							<p class="column-right-info-center-left">открыт: <span>26.05.2014</span></p>
+							<p class="column-right-info-center-right">закрыт: <span>26.05.2014</span></p>
+							<p><a href="#"><i class="far fa-list-alt"></i></a>базис литой из хромокобальтов...</p>	
+							<p class="column-right-info-center-bottom">КБК: <span>182 01 01011 01 3000 110</span></p>
+						</div>
+						<div class="column-right-info-right">
+							<p class="column-right-info-center-left">врач: <span> иванов иван иванович</span></p>
+							<p><a href="#"><i class="far fa-hospital"></i></a>ГБУЗ ГП 123 ФИЛИАЛ 12</p>
+							<p class="column-right-info-center-bottom">отметки: <span>ограничить вре...</span> <a href="#"><i class="fas fa-info"></i></a></p>
+							<p class="column-right-info-right-homework"><i class="fas fa-home"></i> работа на дому</p>
+						</div>
+					</div>
+					<div class="column-right-table">
+						<table class="table-right">
+							<!--подзаголовки-->
+							<tr class="table-right-title">
+								<th>код</th>
+								<th>название</th>
+								<th>кол-во</th>
+								<th>цена</th>
+								<th>сумма</th>
+								<th></th>
+							</tr>
+							<!--1-->
+							<tr class="table-right-name">
+								<td>123</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>10</td>
+								<td>12.00</td>
+								<td>1200.00</td> 
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--2-->
+							<tr class="table-right-name">
+								<td>223</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>1</td>
+								<td>156.00</td>
+								<td>156.00</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--3-->
+							<tr class="table-right-name">
+								<td>323</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>2</td>
+								<td>323.00</td>
+								<td>646.00</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--4-->
+							<tr class="table-right-name">
+								<td>423</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>4</td>
+								<td>423.00</td>
+								<td>1024.00</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--5-->
+							<tr class="table-right-name">
+								<td>524</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>10</td>
+								<td>52.40</td>
+								<td>522.40</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--6-->
+							<tr class="table-right-name">
+								<td>648</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>155</td>
+								<td>6.48</td>
+								<td>2554.48</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--7-->
+							<tr class="table-right-name">
+								<td>772</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>12</td>
+								<td>772.00</td>
+								<td>1200.00</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--8-->
+							<tr class="table-right-name">
+								<td>844</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>10</td>
+								<td>12.00</td>
+								<td>156.00</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--9-->
+							<tr class="table-right-name">
+								<td>988</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>1</td>
+								<td>156.00</td>
+								<td>646.00</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--10-->
+							<tr class="table-right-name">
+								<td>044</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>2</td>
+								<td>323.00</td>
+								<td>1024.00</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--11-->
+							<tr class="table-right-name">
+								<td>145</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>4</td>
+								<td>423.00</td>
+								<td>522.40</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--12-->
+							<tr class="table-right-name">
+								<td>254</td>
+								<td>Спайка деталей в мостовидном протезе</td>
+								<td>10</td>
+								<td>52.40</td>
+								<td>2554.48</td>
+								<td><a href="#"><i class="fas fa-times"></i></a></td>
+							</tr>
+							<!--подзаголовки-->
+							<tr class="table-right-title-down">
+								<th colspan="2">13</th>
+								<th>1024</th>
+								<th>12345.00</th>
+								<th colspan="2">123456.00</th>
+							</tr>					
+						</table>
+						<div class="table-right-search">
+							<input type="text" class="table-right-search-form form-1" placeholder="Код">
+							<input type="text" class="table-right-search-form form-2" placeholder="Введите наименование">
+							<input type="text" class="table-right-search-form form-3" placeholder="Кол-во">
+							<button class="table-right-search-btn">новая работа</button>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<!--нижняя часть -футер-->
+		<div class="footer">
+			<div class="footer-left">
+				<div class="footer-left-docs">
+					<div class="clr"></div>
+					<p>документы в работе: <span>14</span></p>
+				</div>
+				<div class="footer-left-surname">
+					<div class="clr-1"></div>
+					<p>Фамилия И.О.</p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="time">10:07</p>
+				<p class="data">15 сен 2014</p>
+			</div>
+		</div>
+	</div>
+	<!--модальное окно 'Создание наряда'-->
+	<div id="newOutfit" class="new-outfit-1"><!--modal-->
+		<div class="new-outfit-box-1">
+			<div class="new-outfit-box-top">
+				<div class="new-outfit-box-top-up">	
+					<div class="new-outfit-box-title">
+						<p>Создание наряда</p>
+					</div>	
+					<div class="new-outfit-box-title-close"><span class="closeOutfit"><i class="fas fa-times"></i></span>
+					</div>
+				</div>			
+			</div>
+			<div class="new-outfit-1-sort-pl">
+				<div class="new-outfit-1-sort-pl-green">
+					<div class="new-outfit-1-sort-pl-green-items">
+						<a href="#"><i class="fas fa-filter"></i></a>
+						<a href="#">поиск</a>
+						<a href="#">значение</a>
+					</div>
+					<div class="new-outfit-1-sort-pl-green-items-right">
+						<a href="#"><i class="fas fa-sort-down"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="new-outfit-box-1-table">
+				<table class="sort-t">
+					<tr class="sort-t-title">
+						<th class="table-radio"></th>
+						<th class="table-radio-name">фио</th>
+						<th class="table-radio-birth">дата рождения</th>
+						<th class="table-radio-num">номер полиса омс</th>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+					<tr class="sort-t-name">
+						<td><input type="radio"></td>
+						<td>Фамилия Имя Отчество</td>
+						<td>00.00.0000 г.</td>
+						<td>1234567890123456</td>
+					</tr>
+				</table>
+			</div>
+			<div class="new-outfit-box-bottom">
+				<button id="goBack" class="new-outfit-box-bottom-grey-sort">Назад</button>
+				<button class="new-outfit-box-bottom-grey-sort">Дело пациента</button><!--goBack-->
+				<button id="goBackToo" class="new-outfit-box-bottom-grey-sort">Отменить</button>
+				<button id="btnCrtOut" class="new-outfit-box-bottom-create-sort">Выбрать</button><!--btn-->
+			</div>	
+		</div>
+	</div>
+
+	<!--модальное окно внутри 'Создание наряда'-->
+	<div id="myChoice" class="new-outfit"><!--modal-->
+		<div class="new-outfit-box">
+			<div class="new-outfit-box-top">
+				<div class="new-outfit-box-top-up">	
+					<div class="new-outfit-box-title">
+						<p>Создание наряда</p>
+					</div>	
+					<div class="new-outfit-box-title-close"><span class="closeCrt"><i class="fas fa-times"></i></span>
+					</div>
+				</div>			
+			</div>
+			<div class="new-outfit-box-name">
+				<ul>
+					<li class="new-outfit-box-name-person">иванов иван иванович </li>
+					<li>льгота: <span>123 <i class="info-ic"></i></span></li>
+					<li>полис омс <span>1234567890123456</span></li>
+					<li>снилс: <span>1234567890123456</span></li>
+				</ul>
+			</div>
+			<form class="subform" method="post" action="#">
+				<p>
+					<label for="date">Дата открытия <span>*</span></label>
+					<input type="date" value="24 сентября 2014" max="24 сентября 2018" min="24 сентября 2013" id="date">
+				</p>
+				<p>
+					<label for="doc">Врач <span>*</span></label>
+						<div class="form_select">
+							<select name="doc" id="doc">
+								<option value="null">Смирнов Семен Семенович</option>
+								<option value="1">Смирнов Семен Семенович</option>
+								<option value="2">Смирнов Семен Семенович</option>
+								<option value="3">Смирнов Семен Семенович</option>
+								<option value="4">Смирнов Семен Семенович</option>
+							</select>
+						</div>	
+				</p>
+				<p>
+					<label for="type">Тип протезирования <span>*</span></label>
+						<div class="form_select-1">
+							<select name="type" id="type">
+								<option value="null">Пластиковый несъемный протез с кламперами</option>
+								<option value="1">Пластиковый несъемный протез с кламперами</option>
+								<option value="2">Пластиковый несъемный протез с кламперами</option>
+								<option value="3">Пластиковый несъемный протез с кламперами</option>
+								<option value="4">Пластиковый несъемный протез с кламперами</option>
+							</select>
+						</div>	
+				</p>
+				<p>
+					<label for="comments">Особые отметки </label>
+					<textarea name="comments" cols="35" rows="4" id="comments" placeholder="Различные примечания и рабочие пометки. Текстовое окно."></textarea>
+				</p>
+				<p class="checks">
+					<input id="homework" type="checkbox">
+					<label class="homework" for="homework">Работы на дому</label>
+				</p>	
+				<p class="checks-1">
+					<input id="out-1" type="checkbox">
+					<label class="out-1" for="out-1">Добавить в наряд типовые работы для<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;указанного вида протезирования</label>
+				</p>
+			</form>
+			<div class="new-outfit-box-bottom">
+				<button id="goBack" class="new-outfit-box-bottom-grey">Назад</button>
+				<button id="myCancel" class="new-outfit-box-bottom-grey">Отменить</button><!--goBack-->
+				<button class="new-outfit-box-bottom-grey-long">Создать и начать новый</button>
+				<button id="!" class="new-outfit-box-bottom-create">Создать</button><!--btn-->
+			</div>	
+		</div>
+	</div>
+	
+	<script src="js/common.js"></script>
+</body>
+</html>
